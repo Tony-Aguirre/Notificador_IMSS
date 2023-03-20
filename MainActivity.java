@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Usuario = (EditText)findViewById(R.id.txtUsuario);
         Password = (EditText)findViewById(R.id.txtPassword);
     }
+    //Metodo de boton Inicio de sesion
     public void IniciarSesion(View view){
         String URL = "http://192.168.0.10/conexion/validar_usuario.php";
         StringRequest stringRequest =  new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
