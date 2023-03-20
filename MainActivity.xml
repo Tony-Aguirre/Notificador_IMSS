@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fondo">
+    
+    <Button
+        android:id="@+id/btnInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/desaturated"
+        android:onClick="IniciarSesion"
+        android:text="@string/btnInicio"
+        android:textColor="@color/dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtTexto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="258dp"
+        android:gravity="center"
+        android:text="@string/txtTexto2"
+        android:textColor="@color/dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+
+    <TextView
+        android:id="@+id/txtTexto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="292dp"
+        android:gravity="center"
+        android:text="@string/txtTexto1"
+        android:textColor="@color/dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/txtIMSS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imsslogo" />
+
+    <TextView
+        android:id="@+id/txtIMSS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/txtIMSS"
+        android:textColor="@color/desaturated"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        tools:ignore="TextContrastCheck" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/txtTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIMSS" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="@string/txtTitulo1"
+        android:textColor="@color/dark"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTexto1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="125dp"
+        android:ems="10"
+        android:hint="@string/txtPasword"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnInicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTexto2"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="@string/txtUsuario"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtTexto2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTexto1"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
