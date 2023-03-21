@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(String response) {
                 if(!response.isEmpty()){
                     Intent intent = new Intent (getApplicationContext(),Pendientes.class);
+                    intent.putExtra("usuario",Usuario.getText().toString());
                     startActivity(intent);
                 }else{
                     Toast.makeText(MainActivity.this,"Usuario o contraseña incorrectos",Toast.LENGTH_SHORT).show();
