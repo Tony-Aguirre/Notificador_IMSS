@@ -105,14 +105,14 @@ public class Pendientes extends AppCompatActivity {
                             Cedulas.addView(registro);
                         }
                     } catch (JSONException e) {
-                        Toast.makeText(getApplicationContext(),"Error en coneción",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Error en conexión",Toast.LENGTH_SHORT).show();
                     }
                 }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(),"Error en coneción",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Error en conexión",Toast.LENGTH_SHORT).show();
             }
         });
         requestQueue = Volley.newRequestQueue(this);
