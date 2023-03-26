@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">NotificadorIMSS</string>
+    <string name="txtIMSS">Instituto Mexicano del Seguro Social</string>
+    <string name="todo">TODO</string>
+
+    <string name="txtTitulo1">Inicio de Sesión</string>
+    <string name="txtTexto1">Usuario</string>
+    <string name="txtUsuario">Ingresa el Usuario</string>
+    <string name="txtTexto2">Contraseña</string>
+    <string name="txtPasword">Ingresa la Contraseña</string>
+    <string name="btnInicio">Iniciar Sesión</string>
+
+    <string name="txtTitulo2">Pendientes</string>
+    <string name="txtNombre">Nombre de Notificador</string>
+    <string name="btnDesplegar">Desplegar</string>
+    <string name="btnSupervisor">Supervisor</string>
+    <string name="txtRegistroPatronal">Registro Patronal</string>
+    <string name="btnContinuar">Continuar</string>
+
+    <string name="txtTitulo3">Llenado de Documento</string>
+    <string name="txtTexto3">Registro Patronal:</string>
+    <string name="txtTexto4">X</string>
+    <string name="txtRegistro">Numero</string>
+    <string name="txtPatron">Nombre del Patron</string>
+    <string name="txtTexto5">¿Quien atiende la diligencia?</string>
+    <string name="switch1">¿Se identifica?</string>
+    <string name="btnCredencial">Rasgos</string>
+    <string name="txtTexto6">Ingresar los rasgos fisonómicos:</string>
+    <string name="txtTexto7">Ingresa el correo electrónico:</string>
+    <string name="btnEnvias">Envias</string>
+    <string name="btnCancelar2">Cancelar</string>
+
+    <string name="txtTitulo4">Identificación</string>
+    <string name="txtTexto16">Favor de ingresar los datos de identificación</string>
+    <string name="txtTexto17">Identificación:</string>
+    <string name="txtTexto18">Emisión:</string>
+    <string name="txtTexto19">Vigencia:</string>
+    <string name="txtTexto20">Nombre:</string>
+    <string name="txtTexto21">Numero:</string>
+
+    <string name="txtTitulo8">Rasgos Fisonómicos</string>
+    <string name="txtTexto8">Tipo de sexo:</string>
+    <string name="txtTexto9">Color de piel:</string>
+    <string name="txtTexto10">Complexión:</string>
+    <string name="txtTexto11">Cabello:</string>
+    <string name="txtTexto12">Cabello color:</string>
+    <string name="txtTexto13">Color de ojos:</string>
+    <string name="txtTexto14">Edad aproxiada:</string>
+    <string name="txtTexto15">Años</string>
+</resources>
